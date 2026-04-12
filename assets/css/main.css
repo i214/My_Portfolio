@@ -2657,12 +2657,21 @@ input, select, textarea {
 
 	/* Floats */
 
-	.about_me {
-		display: inline-block;
-		float: left;
-		max-width: 60%;
-	}
+	.know_me {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: left;
+		align-content: space-around;
+		gap: 10px;
+		margin-top: 5px;
+		margin-bottom: 50px;
 
+	}
+	
+	.about_me {
+		width: 60%;
+	}
 	.about_me h3 {
 		text-align: left;
 	}
@@ -2671,13 +2680,22 @@ input, select, textarea {
 		text-align: left;
 	}
 	.details ul {
-		display: block;
-		float: right;
 		text-align: left;
 		list-style-type: none;
 	}
 	.cv {
 		margin-top: 50px;
+	}
+
+	.my_skills {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: center;
+		align-content: space-around;
+		gap: 30px;
+		margin-top: 5px;
+		margin-bottom: 50px;
 	}
 
 	.col-1 h3,
@@ -2689,16 +2707,130 @@ input, select, textarea {
 		font-size: 20px;
 	}
 	.col-1 {
-		float: left;
 		width: 40%;
 		margin-right: 10px;
 		text-align: left;
 	}
 	.col-2 {
-		float: right;
 		width: 40%;
 		text-align: left;
 	}
-.checked {
-  color: orange;
-}
+    
+    .six {
+		background-color: #232526;
+	}
+
+    .experience {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: left;
+		align-content: space-evenly;
+		gap: 10px;
+		margin-top: 5px;
+		margin-bottom: 50px;
+	}
+    .experience .col-1,
+	.experience .col-2 {
+		background-color: #040B12;
+		border-radius: 4%;
+		text-align: left;
+		width: 450px;
+		max-width: auto;
+		min-height: 250px;
+	}
+
+	.six h3 {
+		text-align: left;
+		font-weight: 100;
+		color:#fff;
+	}
+	.year {
+		font-size: 20px;
+		margin-top: 50px;
+		margin-left: 20px;
+		padding: .5px;
+		color: #fff;
+		background-color: #EB4141;
+		border-radius: 8%;
+		width: 100px;
+		height: 35px;
+	}
+	.six h1,
+	.six h4 {
+		margin: 10px 10px 10px 20px;
+	}
+	.six h1 {
+		font-size: 28px;
+		color: #fff;
+	}
+	.six p {
+		margin: 10px 10px 10px 20px;
+	}
+	.res_skills {
+		background-color: #040B12;
+		border-radius: 4%;
+		text-align: left;
+		width: 450px;
+		max-width: auto;
+		min-height: 250px;
+		color: #13E080;
+		line-height:1.5;
+	}
+
+	 .seven {
+		background-color: #32393F;
+		height: auto;
+	}
+
+    .testmony {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: center;
+		align-content: space-evenly;
+		gap: 10px;
+		margin-top: 150px;
+		margin-bottom: auto;
+	}
+    .testmony .col-1,
+	.testmony .col-2 {
+		background-color: #040B12;
+		border-radius: 3%;
+		text-align: left;
+		width: 450px;
+		max-width: auto;
+		min-height: 250px;
+	}
+
+	.testmony img {
+		width:100px;
+		height: 100px;
+		object-fit: cover;
+		object-position: center;
+		margin:10px 30px 10px 20px;
+		border-radius: 50%;
+		float: left;
+		
+	}
+	.cl_name {
+		margin:10px 10px 0 10px;
+		color: #fff;
+		font-weight: 400;
+	}
+	.cl_job {
+		font-weight: 400;
+	}
+	.comment {
+		margin: 10px 10px 10px 20px;
+		color: #fff;
+		line-height: 1.5;
+	}
+
+    .checked {
+        color: orange;
+		
+    }
+	.star {
+		margin: 0 0 20px 20px;
+	}
